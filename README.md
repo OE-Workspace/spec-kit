@@ -673,6 +673,20 @@ For support, please open a [GitHub issue](https://github.com/github/spec-kit/iss
 
 This project is heavily influenced by and based on the work and research of [John Lam](https://github.com/jflam).
 
+## OE Fork - Maintenance
+
+This is Optimal Energy's fork of [github/spec-kit](https://github.com/github/spec-kit).
+
+### Sync with upstream
+
+- A GitHub Actions workflow ([`.github/workflows/sync-upstream.yml`](.github/workflows/sync-upstream.yml)) runs monthly to sync with the upstream repo
+- It creates a PR with upstream changes for review before merging
+- Manual sync can be triggered via the Actions tab (`workflow_dispatch`)
+
+### Future: Integration into OE-KT
+
+- Planned as a git subtree under `tools/spec-kit` in the OE-KT repo
+
 ## 📄 License
 
 This project is licensed under the terms of the MIT open source license. Please refer to the [LICENSE](./LICENSE) file for the full terms.
